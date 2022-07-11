@@ -103,8 +103,7 @@ const getWeather = (latitude, longitude) => {
             // JSON parsing (comment this section out for hardcoded testing)
             let data = JSON.parse(xhr.responseText);
             let celsiusTemp = data.weatherObservation.temperature;
-            // let windSpeedInKnots = data.weatherObservation.windSpeed;
-            let windSpeedInKnots = 0;
+            let windSpeedInKnots = data.weatherObservation.windSpeed;
             let windDirection = data.weatherObservation.windDirection;
 
             // Testing values (uncomment this section for hardcoded testing)
